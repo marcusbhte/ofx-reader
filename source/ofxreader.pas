@@ -5,6 +5,7 @@
 
 // 2006 - Eduardo Bento da Rocha (YoungArts)
 // 2016 - Leonardo Gregianin - github.com/leogregianin
+// 2017 - Marcus Almeida - github.com/marcusbhte/ofx-reader
 
 unit ofxreader;
 
@@ -180,8 +181,8 @@ end;
 function TOFXReader.PrepareFloat( sString : string ) : string;
 begin
   Result := sString;
-  Result := ReplaceString(Result, '.', DecimalSeparator);
-  Result := ReplaceString(Result, ',', DecimalSeparator);
+  Result := ReplaceString(Result, '.', FormatSettings.DecimalSeparator);
+  Result := ReplaceString(Result, ',', FormatSettings.DecimalSeparator);
 end;
 
 function TOFXReader.ReplaceString(sString: string; sOld: string; sNew: string; bInsensitive : boolean = true): string;
