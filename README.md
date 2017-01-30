@@ -1,3 +1,4 @@
+Fontes Originais em: https://github.com/leogregianin/ofx-reader
 # OFX/OFC Reader
 Read the OFX (Open Financial Exchange) and OFC (Open Financial Connectivity) file formats
 
